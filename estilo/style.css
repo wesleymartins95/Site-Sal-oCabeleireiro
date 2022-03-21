@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*-------VARIAVEIS-----------*/
+:root {
+  --fontH1: 'Poppins', sans-serif;
+  --fontP: 'DM Sans', sans-serif;
+  --fontLink: 'DM Sans', sans-serif;
+
+  --color-body: #f9f9f9;
+}
+
+/*-------BASE-----------*/
+body {
+  font-family: var(--fontP);
+  background-color: var(--color-body);
+}
+
+h1 {
+  font-family: var(--fontH1);
+}
+
+.button {
+  font-family: var(--fontP);
+  background-color: #69b99d;
+  height: 3.5rem;
+  width: 14rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 2rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: 0.8s;
+}
+.button:hover {
+  background-color: aqua;
+}
+
+.divider1 {
+  height: 1px;
+  background-color: linear-gradient(
+    270deg,
+    #69b99d 0%,
+    rgba(204, 244, 230, 0.34) 100%
+  );
+}
+/* ------LAYOUT----------*/
+#header {
+  height: 4.5rem; /* Para chegar a esse valor peguei o pixel do cabeçalho do figme e dividi por 16, pq 16 em rem é 100% em pixel,
+  ou seja peguei uma parte dos 100 para utilizar. 
+  IMPORTANTE: Sempre usar REM para sites responsivos pq o pix a imagem fica estatica e não altera o tamanho junto c/ a page */
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.menu {
+  padding-left: ;
+}
+
+nav {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.logo {
+  font-family: var(--fontH1);
+  font-size: 1.31rem;
+}
+
+.grid {
+  display: grid;
+  gap: rem;
+}
+.logo span {
+  color: #69b99d;
+}
+p {
+  font-family: var(--fontP);
+}
+a {
+  font-family: var(--fontLink);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.section {
+  padding: 7.5rem 0;
+}
+
+/*-----HOME------------*/
+#home {
+  overflow: hidden;
+}
+
+#home .container {
+  margin: 5rem;
+}
+
+#home .image {
+  position: relative;
+}
+
+#home .image::before {
+  content: '';
+  height: 90%;
+  width: 100%;
+
+  background: #69b99d;
+  position: absolute;
+  top: -16.8%;
+  left: 16.8%;
+  z-index: 0;
+}
+#home .image img {
+  position: relative;
+  right: 2.93rem;
+}
+#home .image img,
+#home .image::before {
+  border-radius: 0.25rem;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+#home .text p {
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
