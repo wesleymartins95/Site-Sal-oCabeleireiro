@@ -78,6 +78,9 @@ nav {
   align-items: center;
   width: 100%;
 }
+.menu {
+  border-radius: 2rem;
+}
 
 .container {
   width: 80%;
