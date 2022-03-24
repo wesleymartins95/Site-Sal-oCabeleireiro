@@ -25,8 +25,9 @@ const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
   link.addEventListener('click', function () {
-    nav.classList.remove(
-      'show'
-    ) /* quero remover o show,pq se eu cliquei no menu para abrir a classe show foi colocada, agora tenho q retirar.*/
+    nav.classList.remove('show') /* quero remover o show,pq se eu cliquei no menu para abrir a classe show,
+     ela foi colocada, agora tenho q retirar.*/
   })
 }
+
+
